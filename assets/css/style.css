@@ -1,0 +1,30 @@
+:root {
+    --debugging: 1px solid red;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+
+header > .links > ul {
+    display: flex;
+    gap: 10px;
+}
+
+header > .links > ul > li {
+    list-style-type: none;
+}
+
+header > .links > ul > li > a {
+    text-decoration: none;
+    color: red;
+}
