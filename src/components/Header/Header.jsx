@@ -21,22 +21,22 @@ const Header = () => {
               <RxHamburgerMenu size={30} />
             </button>
           </div>
-          <nav className={`md:flex md:items-center md:w-auto text-center ${isOpen ? 'block' : 'hidden'}`}>
-            <ul className="flex flex-col md:flex-row md:items-center md:gap-3">
+          <nav className={`md:flex md:items-center md:w-auto text-center bg-zinc-900 md:static w-full absolute transition-all duration-500 ease-in-out ${isOpen ? 'opacity-100' : 'opacity-0'} md:opacity-100`}>
+            <ul className="flex flex-col md:flex-row md:items-center md:gap-3 gap-8 md:mt-0 mt-5 p-2">
               <li>
-                <a className="text-xl text-gray-50 p-3 hover:border-b-2 hover:border-green-300 transition duration-500 hover:text-green-300" href="#">Home</a>
+                <a className="text-xl text-gray-50 p-3 md:hover:border-b-2 hover:border-green-300 transition duration-500 hover:text-green-300" href="#">Home</a>
               </li>
               <li>
-                <a className="text-xl text-gray-50 p-3 hover:border-kb-2 hover:border-green-300 transition duration-500 hover:text-green-300" href="#">About</a>
+                <a className="text-xl text-gray-50 p-3 md:hover:border-b-2 hover:border-green-300 transition duration-500 hover:text-green-300" href="#">About</a>
               </li>
               <li>
-                <a className="text-xl text-gray-50 p-3 hover:border-b-2 hover:border-green-300 transition duration-500 hover:text-green-300" href="#">Projects</a>
+                <a className="text-xl text-gray-50 p-3 md:hover:border-b-2 hover:border-green-300 transition duration-500 hover:text-green-300" href="#">Projects</a>
               </li>
               <li>
-                <a className="text-xl text-gray-50 p-3 hover:border-b-2 hover:border-green-300 transition duration-500 hover:text-green-300" href="#">Services</a>
+                <a className="text-xl text-gray-50 p-3 md:hover:border-b-2 hover:border-green-300 transition duration-500 hover:text-green-300" href="#">Services</a>
               </li>
               <li>
-                <a className="text-xl text-gray-50 p-3 hover:border-b-2 hover:border-green-300 transition duration-500 hover:text-green-300" href="#">Contact</a>
+                <a className="text-xl text-gray-50 p-3 md:hover:border-b-2 hover:border-green-300 transition duration-500 hover:text-green-300" href="#">Contact</a>
               </li>
             </ul>
           </nav>
