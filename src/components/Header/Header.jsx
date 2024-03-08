@@ -1,7 +1,7 @@
 const Header = () => {
   return(
     <>
-      <header className="flex justify-between p-5 items-center">
+      <header className="fixed top-0 min-w-full flex justify-between items-center p-3 z-[1100] bg-zinc-900">
         <div className="icon text-green-300 text-3xl p-3">bangueco()</div>
         <nav>
           <ul>
