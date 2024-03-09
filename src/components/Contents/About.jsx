@@ -23,7 +23,7 @@ const About = () => {
           <p className="border-green-300 border-2 w-28 text-lg rounded-lg text-gray-300 font-bold">Express JS</p>
         </div>
         <h1 className="text-4xl text-green-300 lg:text-4xl mt-10">Other Technologies</h1>
-        <div className="grid grid-cols-3 gap-5 text-center lg: grid-cols-5">
+        <div className="grid grid-cols-3 gap-5 text-center lg:grid-cols-5">
           <p className="border-green-300 border-2 w-28 text-lg rounded-lg text-gray-300 font-bold">Java</p>
           <p className="border-green-300 border-2 w-28 text-lg rounded-lg text-gray-300 font-bold">C#</p>
           <p className="border-green-300 border-2 w-28 text-lg rounded-lg text-gray-300 font-bold">C++</p>
