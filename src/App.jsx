@@ -7,9 +7,9 @@ const App = () => {
   return(
     <>
       <Header />
-      <Home />
-      <About />
-      <Projects />
+      <main>
+        
+      </main>
     </>
   )
 }
