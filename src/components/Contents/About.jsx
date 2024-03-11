@@ -4,11 +4,11 @@ const About = () => {
       <div className="mt-32 flex justify-center items-center flex-col gap-12 p-5">
         <h1 className="text-4xl text-green-300 lg:text-6xl">About Me</h1>
         <div className="flex items-center flex-col justify-center">
-          <p className="text-lg text-nowrap text-gray-300 sm:w-4/5 sm:text-xl lg:text-2xl">
+          <p className="text-lg text-wrap text-gray-300 sm:w-4/5 sm:text-xl lg:text-2xl">
             I&apos;m a 21 y/o, 3rd year college student from Eastwoods Professional College of Science and Technology,
             with a strong passion for web development.
           </p>
-          <p className="text-lg text-nowrap text-gray-300 sm:w-4/5 sm:text-xl lg:text-2xl mt-5">
+          <p className="text-lg text-wrap text-gray-300 sm:w-4/5 sm:text-xl lg:text-2xl mt-5">
             While having solid foundation in back-end development, I also enjoy learning front-end technologies, making me a versatile full-stack developer. Delving into different frameworks, 
             learning new tools, and mastering various languages in-order to enhance my skills and knowledge further.
           </p>
