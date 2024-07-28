@@ -6,10 +6,13 @@ function Navigation() {
   const [scrolled, setScrolled] = useState<number>(0)
 
   useEffect(() => {
-    const headerContainer = document.querySelector('#header-container')
     window.addEventListener('scroll', () => {
       setScrolled(window.scrollY)
     })
+  }, [])
+
+  useEffect(() => {
+    const headerContainer = document.querySelector('#header-container')
 
     if (scrolled > 20) {
       headerContainer?.classList.add('header-scrolled')
