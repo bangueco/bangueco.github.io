@@ -1,4 +1,3 @@
-import './contents.css'
 import hi from '../../assets/images/hi.png'
 
 export function Welcome() {
