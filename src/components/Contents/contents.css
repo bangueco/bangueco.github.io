@@ -1,0 +1,37 @@
+@import url('../../App.css');
+
+.section-container {
+  margin-top: 100px;
+}
+
+/* Welcome Section */
+
+#welcome-section {
+  border: var(--debugging);
+  padding: 10px;
+  height: 100vh;
+  color: var(--text-color);
+}
+
+#welcome-avatar {
+  height: 320px;
+}
+
+#welcome-section > .section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  gap: 50px;
+}
+
+#welcome-introduction > :first-child {
+  font-size: 2.8rem;
+}
+
+#welcome-introduction > :nth-child(2) {
+  word-wrap: break-word;
+  max-width: 700px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
