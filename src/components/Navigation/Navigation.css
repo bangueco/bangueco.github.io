@@ -1,0 +1,35 @@
+@import url('../../App.css');
+
+#header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: var(--debugging);
+  color: var(--text-color);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+#header-container > p:first-child {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+#header-container > nav > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 30px;
+}
+
+ul > li > a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+
+li > a:hover {
+  color: var(--primary-color);
+}
