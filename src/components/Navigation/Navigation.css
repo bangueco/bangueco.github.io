@@ -67,3 +67,17 @@ ul > li > a {
     display: none;
   }
 }
+
+@media (min-width: 568px) {
+  #header-container > nav {
+    justify-content: space-around;
+  }
+
+  #header-container > nav > :last-child {
+    display: none;
+  }
+
+  #header-container > nav > ul {
+    display: flex;
+  }
+}
