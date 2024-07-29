@@ -1,0 +1,31 @@
+@import url('../../App.css');
+
+.hidden {
+  top: 0px;
+  position: absolute;
+  right: -100vw;
+  transition: right 0.5s ease-in;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 25px;
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 100vh;
+  width: 50vw;
+}
+
+#sidebar > ul {
+  padding-left: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
