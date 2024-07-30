@@ -14,7 +14,7 @@ function Navigation() {
   }, [])
 
   useEffect(() => {
-    const headerContainer = document.querySelector('#header-container')
+    const headerContainer = document.querySelector('#header-wrapper')
 
     if (scrolled > 20) {
       headerContainer?.classList.add('header-scrolled')
@@ -36,16 +36,16 @@ function Navigation() {
   }
 
   return (
-    <header id='header-container'>
-      <nav>
+    <header id='header-wrapper'>
+      <div id="header-container">
         <p>bangueco()</p>
-        <ul id='header-menu'>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <RxHamburgerMenu onClick={toggleMenu} size={30} color='white' />
-      </nav>
+        <nav>
+          <a href="#">ABOUT</a>
+          <a href="#">PROJECTS</a>
+          <a href="#">CONTACT</a>
+        </nav>
+        <RxHamburgerMenu id='hamburger-menu' onClick={toggleMenu} color='white' size={30} />
+      </div>
       <Sidebar />
     </header>
   )

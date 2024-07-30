@@ -1,83 +1,50 @@
 @import url('../../App.css');
 
-#header-container {
-  padding: 20px;
+#header-wrapper {
   position: fixed;
+  padding: 20px;
   width: 100%;
-  z-index: 20;
+}
+
+#header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80rem;
+  margin: auto;
 }
 
 .header-scrolled {
   background-color: var(--header-bg-color);
-  backdrop-filter: blur(10px);
-  box-shadow: 0px 0px 10px black;
+  backdrop-filter: blur(20px);
 }
 
-.sidebar-active {
-  top: 0px;
-  right: 0px;
-  transition: right 0.5s ease-in;
+#header-container > p {
+  color: var(--primary-color);
+  font-size: clamp(1.8rem, 2vw, 4rem);
 }
 
 #header-container > nav {
-  display: flex;
-  max-width: 80rem;
-  margin: auto;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
+  display: none;
 }
 
-#header-container > nav > p:first-child {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-#header-container > nav > ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  gap: 30px;
-  z-index: -30;
-}
-
-ul > li > a {
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: var(--text-color);
-}
-
-#header-container > ul > li > a:hover {
-  color: var(--primary-color);
-}
-
-/* Media Query */
-
-@media (min-width: 360px) {
+@media (min-width: 700px) {
   #header-container > nav {
-    justify-content: space-between;
-  }
-
-  #header-container > nav > p:first-child {
-    font-size: 1.5rem;
-  }
-
-  #header-container > nav > ul {
-    display: none;
-  }
-}
-
-@media (min-width: 568px) {
-  #header-container > nav {
-    justify-content: space-around;
-  }
-
-  #header-container > nav > :last-child {
-    display: none;
-  }
-
-  #header-container > nav > ul {
     display: flex;
+    gap: 20px;
+  }
+
+  #header-container > nav > a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: clamp(12px, 3vw, 20px);
+  }
+
+  #header-container > nav > a:hover {
+    color: var(--primary-color);
+  }
+
+  #hamburger-menu {
+    display: none;
   }
 }
