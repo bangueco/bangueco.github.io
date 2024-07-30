@@ -8,184 +8,71 @@
   color: var(--text-color);
 }
 
-#welcome-avatar {
-  height: 350px;
-}
-
 #welcome-section > .section-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding-top: 200px;
-  gap: 50px;
+  padding-top: 85px;
+  gap: 5px;
 }
 
-#welcome-introduction > :first-child {
-  font-size: 2.8rem;
+#welcome-avatar {
+  width: clamp(190px, 40vw, 350px);
+  height: auto;
 }
 
-#welcome-introduction > :nth-child(2) {
-  word-wrap: break-word;
-  max-width: 700px;
-  color: var(--primary-color);
-  font-size: 1.5rem;
+#waving-hand {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(1.3rem, 1vw, 3rem);
 }
 
-/* About Section */
-
-#about {
-  padding: 10px;
-}
-
-#about > .section-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 50px;
-  padding-top: 80px;
-}
-
-#about > .section-container > :nth-child(1) {
+#waving-hand > :first-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
 }
 
-.section-container > :nth-child(1) > #about-details > h1 {
-  color: var(--primary-color);
-  font-size: 4.5rem;
+#waving-hand > :nth-child(2) {
+  font-size: clamp(1.8rem, 5vw, 8rem);
 }
 
-.section-container > :nth-child(2) > #about-tech-stacks > h1 {
-  color: var(--primary-color);
-  font-size: 4.5rem;
-}
-
-.section-container > :nth-child(1) > #about-details {
+#waving-hand > :nth-child(3) {
+  padding-top: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 50%;
-  color: var(--text-color);
-  font-size: 1.3rem;
-}
-
-.section-container > :nth-child(2) > #about-tech-stacks {
-  display: flex;
+  gap: 10px;
   justify-content: center;
 }
 
-#about-tech-stacks {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-#stacks-container {
-  display: grid;
-  grid-template-columns: repeat(6, 100px);
-  grid-auto-flow: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-#stacks-container > img {
-  border: 1px solid gray;
-  padding: 10px;
-  border-radius: 10px;
-  height: 85px;
+#waving-hand > :nth-child(3) button {
+  background-color: white;
+  border: none;
   cursor: pointer;
+  border-radius: 30px;
+  padding: 8px 12px;
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
 }
 
-#stacks-container > img:hover {
-  transform: scale(1.1);
+#waving-hand > :nth-child(3) button:hover {
+  color: var(--text-color);
+  background-color: var(--primary-color);
 }
 
-#about-image {
-  height: 350px;
-  width: 350px;
-}
+/* Breakpoints */
 
-/* Media Queries */
-
-@media (min-width: 360px) {
-  /* Welcome Section */
-
-  #welcome-avatar {
-    height: 250px;
-  }
-  
+@media (min-width: 1024px) {
   #welcome-section > .section-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    padding-top: 100px;
-  }
-  
-  #welcome-introduction > :first-child {
-    font-size: 1.5rem;
-  }
-  
-  #welcome-introduction > :nth-child(2) {
-    font-size: 1rem;
+    flex-direction: row;
   }
 
-  /* About Section */
-
-  #about > .section-container {
-    justify-content: center;
+  #waving-hand > :first-child {
+    align-self: flex-start;
   }
 
-  #about > .section-container > :nth-child(1) {
-    flex-direction: column-reverse;
+  #waving-hand > :nth-child(3) {
+    justify-content: flex-start;
   }
-
-  .section-container > :nth-child(1) > #about-details {
-    font-size: 1rem;
-    align-items: center;
-    width: 90%;
-  }
-
-  .section-container > :nth-child(1) > #about-details > h1 {
-    font-size: 2.5rem;
-  }
-
-  .section-container > :nth-child(2) > #about-tech-stacks > h1 {
-    font-size: 2.3rem;
-  }
-
-  #about-image {
-    display: none;
-  }
-
-  #stacks-container {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #stacks-container > img {
-    height: 70px;
-    width: 70px;
-  }
-}
-
-@media (min-width: 568px) {
-  #welcome-avatar {
-    height: 320px;
-  }
-
-  #welcome-introduction > :first-child {
-    font-size: 2rem;
-  }
-  
-  #welcome-introduction > :nth-child(2) {
-    font-size: 1rem;
-  }
-
 }
