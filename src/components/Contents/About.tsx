@@ -1,10 +1,16 @@
 import me from '../../assets/images/me.jpg'
+import { motion } from "framer-motion"
 
 export default function About() {
   return (
     <section id="about">
       <div className="section-container">
-        <div>
+        <motion.div
+          initial={{ x: -300 }}
+          whileInView={{ x: 0 }}
+          transition={{duration: 0.6}}
+          viewport={{once: true}}
+        >
           <div id="about-details">
             <h1>About Me</h1>
             <p>
@@ -23,8 +29,13 @@ export default function About() {
             </p>
           </div>
           <img id='about-image' src={me} alt="" />
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ x: -300 }}
+          whileInView={{ x: 0 }}
+          transition={{duration: 0.6}}
+          viewport={{once: true}}
+        >
           <div id="about-tech-stacks">
             <h1>Current Tech Stack</h1>
             <div id="stacks-container">
@@ -78,7 +89,7 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
