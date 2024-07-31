@@ -11,21 +11,22 @@ export default function Welcome() {
           id='welcome-avatar' 
           src={hi} 
           alt="hi hello"
-          initial={{x: -200, zIndex: -1}}
-          animate={{x: 0, zIndex: -1}}
-          transition={{type: 'spring', duration: 2}}
+          initial={{x: -200, opacity: 0, zIndex: -1}}
+          animate={{x: 0, opacity: 1, zIndex: -1}}
+          transition={{duration: 0.8}}
         />
         <motion.div
           id='waving-hand'
-          initial={{x: 200}}
-          animate={{x: 0}}
-          transition={{type: 'spring', duration: 2}}
+          initial={{x: 200, opacity: 0}}
+          animate={{x: 0, opacity: 1}}
+          transition={{duration: 0.8}}
         >
           <div>
             <motion.p
-              initial={{ rotate: 0 }}
-              animate={{ rotate: [0, 20, -20, 0] }}
-              transition={{ repeat: Infinity, duration: 1.3, repeatDelay: 2.5 }}
+              style={{scale: 1.2, zIndex: -1}}
+              initial={{ rotate: 0}}
+              animate={{ rotate: [0, 25, -35, 0]}}
+              transition={{ repeat: Infinity, duration: 0.7, repeatDelay: 3.5, delay: 1.3 }}
             >
               👋🏼
             </motion.p>
@@ -33,9 +34,9 @@ export default function Welcome() {
           </div>
           <TypingAnimation text="Justine Ivan Gueco" />
           <motion.div
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{duration: 3}}
+            initial={{y: -30, opacity: 0}}
+            animate={{y: 0, opacity: 1}}
+            transition={{duration: 0.6}}
           >
             <button>Download CV</button>
             <button>Scroll Down</button>
