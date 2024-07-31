@@ -148,10 +148,6 @@
   flex-direction: column;
 }
 
-.tech {
-  position: relative;
-}
-
 .tech > .hidden {
   display: none;
 }
