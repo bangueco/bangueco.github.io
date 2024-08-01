@@ -12,6 +12,9 @@
   --bangers: "Bangers", system-ui
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   height: 100%;
