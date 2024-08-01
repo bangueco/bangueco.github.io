@@ -6,9 +6,9 @@ export default function About() {
     <section id="about">
       <div className="section-container">
         <motion.div
-          initial={{ x: -300 }}
-          whileInView={{ x: 0 }}
-          transition={{duration: 0.6}}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{duration: 1.2}}
           viewport={{once: true}}
         >
           <div id="about-details">
@@ -31,9 +31,9 @@ export default function About() {
           <img id='about-image' src={me} alt="" />
         </motion.div>
         <motion.div
-          initial={{ x: -300 }}
-          whileInView={{ x: 0 }}
-          transition={{duration: 0.6}}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{duration: 1.5}}
           viewport={{once: true}}
         >
           <div id="about-tech-stacks">
