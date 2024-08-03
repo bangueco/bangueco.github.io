@@ -23,7 +23,7 @@ function Navigation() {
   useEffect(() => {
     const headerContainer = document.querySelector('#header-wrapper')
 
-    if (scrolled > 20) {
+    if (scrolled > 20 || window.scrollY > 20) {
       headerContainer?.classList.add('header-scrolled')
     } else {
       headerContainer?.classList.remove('header-scrolled')
