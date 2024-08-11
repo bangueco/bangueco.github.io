@@ -5,13 +5,14 @@ export default function About() {
   return (
     <section id="about">
       <div className="section-container">
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{duration: 1.2}}
-          viewport={{once: true}}
+        <div
         >
-          <div id="about-details">
+          <motion.div id="about-details"
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{duration: 0.4}}
+            viewport={{once: true}}
+          >
             <h1>About Me</h1>
             <p>
               I'm 21 years old, an incoming 4th year college taking Bachelor Of Science in Information Technology, in Eastwoods Professional College of
@@ -27,13 +28,20 @@ export default function About() {
               projects and continue to grow as a developer. My goal is to work with innovative teams that push the boundaries of technology and 
               deliver cutting-edge solutions.
             </p>
-          </div>
-          <img id='about-image' src={me} alt="" />
-        </motion.div>
+          </motion.div>
+          <motion.img 
+            id='about-image' 
+            src={me} alt=""
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{duration: 0.4}}
+            viewport={{once: true}}
+          />
+        </div>
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{duration: 1.5}}
+          transition={{duration: 0.5, delay: 0.3}}
           viewport={{once: true}}
         >
           <div id="about-tech-stacks">

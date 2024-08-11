@@ -25,8 +25,8 @@ export default function Welcome() {
             <motion.p
               style={{scale: 1.2, zIndex: -1}}
               initial={{ rotate: 0}}
-              animate={{ rotate: [0, 25, -35, 0]}}
-              transition={{ repeat: Infinity, duration: 1.4, repeatDelay: 3.5, delay: 1.3 }}
+              animate={{ rotate: [0, 20, -30, 0]}}
+              transition={{ repeat: Infinity, duration: 0.8, repeatDelay: 3.5, delay: 1.3 }}
             >
               👋🏼
             </motion.p>
