@@ -39,9 +39,9 @@ function Navigation() {
       <div id="header-container">
         <p>bangueco()</p>
         <nav>
-          <a href="#about">ABOUT</a>
-          <a href="#">PROJECTS</a>
-          <a href="#">CONTACT</a>
+          <a href="#about">about()</a>
+          <a href="#">projects()</a>
+          <a href="#">contact()</a>
         </nav>
         {
           !sidebarVisible 
