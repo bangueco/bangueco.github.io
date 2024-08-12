@@ -102,9 +102,41 @@
   display: none;
 }
 
+/* Things I Do */
+
+#about > .section-container > :nth-child(2) {
+  padding-top: 80px;
+}
+
+#about-things-i-do > h1 {
+  color: var(--primary-color);
+  font-size: clamp(2.2rem, 5vw, 2.5rem);
+  text-align: center;
+}
+
+.things-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.things-container > .do-item {
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 20px;
+  height: 150px
+}
+
+.things-container > .do-item > p {
+  padding-top: 10px;
+}
+
 /* Tech Stacks */
 
-#about > .section-container > div:nth-child(2) {
+#about > .section-container > :nth-child(3) {
   padding-top: 80px;
 }
 
@@ -178,6 +210,10 @@
   #stacks-container {
     grid-template-columns: repeat(6, 1fr);
   }
+
+  .things-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -195,6 +231,10 @@
 
   #waving-hand > :nth-child(3) {
     justify-content: flex-start;
+  }
+
+  .things-container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

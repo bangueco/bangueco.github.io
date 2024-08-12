@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import me from '../../assets/images/me.jpg'
 import { motion, useInView } from "framer-motion"
+import { thingsIDoData } from '../../lib/data'
 
 export default function About() {
   
@@ -10,8 +11,7 @@ export default function About() {
   return (
     <section id="about">
       <div className="section-container container">
-        <div
-        >
+        <div>
           <motion.div id="about-details"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0}}
@@ -42,11 +42,33 @@ export default function About() {
             transition={{duration: 0.4}}
           />
         </div>
+        <div>
+          <div id="about-things-i-do">
+            <h1>Things i do</h1>
+            <div className="things-container">
+              {
+                thingsIDoData.map((item, index)=> (
+                  <motion.div 
+                    className='do-item' 
+                    key={index}
+                    initial={{x: -50, opacity: 0}}
+                    whileInView={{x: 0, opacity: 1}}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    viewport={{once: true}}
+                  >
+                    <h1>{item.title}</h1>
+                    <p>{item.description}</p>
+                  </motion.div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
         <motion.div
           initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
-          transition={{duration: 0.5, delay: 0.3}}
-          viewport={{once: true}}
+          whileInView={{x: 0, opacity: 1}}
+          transition={{duration: 0.4}}
+          viewport={{once: true, amount: 0.3}}
         >
           <div id="about-tech-stacks">
             <h1>Current Tech Stack</h1>
