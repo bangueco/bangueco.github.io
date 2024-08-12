@@ -1,17 +1,22 @@
+import { useRef } from 'react'
 import me from '../../assets/images/me.jpg'
-import { motion } from "framer-motion"
+import { motion, useInView } from "framer-motion"
 
 export default function About() {
+  
+  const ref = useRef(null)
+  const isInView = useInView(ref, {amount: 0.3, once: true})
+
   return (
     <section id="about">
-      <div className="section-container">
+      <div className="section-container container">
         <div
         >
           <motion.div id="about-details"
             initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0}}
             transition={{duration: 0.4}}
-            viewport={{once: true}}
+            ref={ref}
           >
             <h1>About Me</h1>
             <p>
@@ -33,14 +38,13 @@ export default function About() {
             id='about-image' 
             src={me} alt=""
             initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            animate={{ x: isInView ? 0 : 100, opacity: isInView ? 1 : 0 }}
             transition={{duration: 0.4}}
-            viewport={{once: true}}
           />
         </div>
         <motion.div
           initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          whileInView={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
           transition={{duration: 0.5, delay: 0.3}}
           viewport={{once: true}}
         >

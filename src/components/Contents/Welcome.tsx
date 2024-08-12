@@ -6,13 +6,13 @@ export default function Welcome() {
 
   return (
     <section id="welcome-section">
-      <div className="section-container">
+      <div className="section-container container">
         <motion.img 
           id='welcome-avatar' 
           src={hi} 
           alt="hi hello"
-          initial={{x: -80, opacity: 0, zIndex: -1}}
-          animate={{x: 0, opacity: 1, zIndex: -1}}
+          initial={{x: -80, opacity: 0}}
+          animate={{x: 0, opacity: 1}}
           transition={{duration: 1.2}}
         />
         <motion.div
@@ -23,7 +23,7 @@ export default function Welcome() {
         >
           <div>
             <motion.p
-              style={{scale: 1.2, zIndex: -1}}
+              style={{scale: 1.2}}
               initial={{ rotate: 0}}
               animate={{ rotate: [0, 20, -30, 0]}}
               transition={{ repeat: Infinity, duration: 0.8, repeatDelay: 3.5, delay: 1.3 }}

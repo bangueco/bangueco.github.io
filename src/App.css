@@ -5,6 +5,7 @@
   --primary-color: rgba(108, 212, 255, 1);
   --secondary-color: rgba(82, 189, 76, 1);
   --background-color: rgba(25, 21, 22, 1);
+  --lighter-background-color: rgb(29, 25, 26);
   --header-bg-color: rgba(25, 21, 22, 0.8);
   --text-color: rgba(245, 247, 248, 1);
   --debugging: 1px solid red; /* No conversion needed for this */
@@ -22,7 +23,7 @@ body {
   font-family: var(--font);
 }
 
-#contents {
+.container {
   max-width: 80rem;
   margin: auto;
 }

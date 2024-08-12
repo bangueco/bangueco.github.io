@@ -36,7 +36,7 @@ function Navigation() {
 
   return (
     <header id='header-wrapper'>
-      <div id="header-container">
+      <div id="header-container" className='container'>
         <p>bangueco()</p>
         <nav>
           <a href="#about">about()</a>

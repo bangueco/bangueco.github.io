@@ -65,6 +65,7 @@
 #about {
   color: var(--text-color);
   padding: 10px;
+  background-color: var(--lighter-background-color);
 }
 
 #about > .section-container {
