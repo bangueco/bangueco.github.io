@@ -217,7 +217,7 @@
 
 #my-projects {
   display: grid;
-  grid-template-columns: 400px;
+  grid-template-columns: 1fr;
   gap: 10px;
   justify-content: center;
   align-items: center;
