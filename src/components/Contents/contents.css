@@ -70,6 +70,7 @@
 
 #about > .section-container {
   padding-top: 70px;
+  padding-bottom: 90px;
 }
 
 #about > .section-container > div:nth-child(1) {
@@ -197,6 +198,99 @@
   display: block;
 }
 
+/* Projects section */
+
+#projects > .section-container {
+  padding: 10px;
+}
+
+#projects > .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#projects > .section-container > h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: clamp(2.2rem, 5vw, 2.5rem);
+}
+
+#my-projects {
+  display: grid;
+  grid-template-columns: 400px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--lighter-background-color);
+  padding: 15px;
+  border-radius: 10px;
+  gap: 5px;
+  height: 500px;
+}
+
+.project-card > img {
+  padding: 10px;
+  min-height: 250px;
+}
+
+.project-card > .project-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.project-card > .project-title, .project-description {
+  color: var(--text-color);
+  width: 100%;
+}
+
+.project-card > .project-description {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.project-card > .project-technologies {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 100px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+.project-card > .project-technologies > p {
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.project-link {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 10px;
+  padding: 3px;
+}
+
+.project-link > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--text-color);
+}
 
 /* Breakpoints */
 
@@ -211,7 +305,7 @@
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .things-container {
+  .things-container, #my-projects {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -233,7 +327,7 @@
     justify-content: flex-start;
   }
 
-  .things-container {
+  .things-container, #my-projects {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

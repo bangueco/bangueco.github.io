@@ -54,7 +54,7 @@ export default function About() {
                     initial={{x: -50, opacity: 0}}
                     whileInView={{x: 0, opacity: 1}}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
-                    viewport={{once: true}}
+                    viewport={{once: true, amount: 0.4}}
                   >
                     <h1>{item.title}</h1>
                     <p>{item.description}</p>

@@ -25,6 +25,13 @@ const thingsIDoData = [
   }
 ];
 
+const projectsData = [
+  {
+
+  }
+]
+
 export {
-  thingsIDoData
+  thingsIDoData,
+  projectsData
 }
