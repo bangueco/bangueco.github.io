@@ -28,7 +28,7 @@ export default function Navigation() {
 
   return (
     <>
-      <header className="flex justify-between p-5 items-center fixed w-full bg-light dark:bg-dark z-20">
+      <header className="flex justify-between p-5 items-center fixed w-full bg-light dark:bg-dark top-0 z-20">
         <div>
           <Link href="/" className="text-2xl hover:text-primary">
             &lt;bangueco/&gt;
@@ -60,23 +60,23 @@ export default function Navigation() {
         {
           isOpen && (
             <motion.div
-              initial={{y: -200, opacity: 0}}
-              animate={{y: 70, opacity: 1}}
-              exit={{y: -200, opacity: 0}}
+              initial={{y: -200}}
+              animate={{y: 70}}
+              exit={{y: -200}}
               transition={{duration: 0.5}}
-              className="md:hidden absolute w-full left-0 text-center bg-light dark:bg-dark backdrop-blur-sm border-b-2"
+              className="md:hidden absolute w-full left-0 text-center bg-slate-100 dark:bg-stone-900 backdrop-blur-lg"
             >
               <ul className="text-xl flex flex-col gap-3">
-                <li className="p-3">
+                <li className="p-2">
                   <Link href="/">Home</Link>
                 </li>
-                <li className="p-3">
+                <li className="p-2">
                   <Link href="/about">About</Link>
                 </li>
-                <li className="p-3">
+                <li className="p-2">
                   <Link href="/projects">Projects</Link>
                 </li>
-                <li className="p-3">
+                <li className="p-2">
                   <ThemeSwitcher />
                 </li>
               </ul>
