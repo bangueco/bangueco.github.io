@@ -24,7 +24,9 @@ export default function RootLayout({
       <body className={`${manrope.className} h-full bg-light dark:bg-dark relative`}>
         <Providers>
           <Navigation />
-          {children}
+          <main>
+            {children}
+          </main>
         </Providers>
       </body>
     </html>
