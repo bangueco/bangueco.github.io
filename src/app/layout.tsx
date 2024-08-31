@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${manrope.className} bg-light dark:bg-dark`}>
+      <body className={`${manrope.className} h-full bg-light dark:bg-dark relative`}>
         <Providers>
           <Navigation />
           {children}
