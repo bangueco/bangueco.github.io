@@ -5,7 +5,7 @@ import { ReactNode } from "react"
 
 export default function Providers({children}: {children: ReactNode}) {
   return (
-    <NextUIProvider>
+    <NextUIProvider className="min-h-full">
       <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
         {children}
       </ThemeProvider>
