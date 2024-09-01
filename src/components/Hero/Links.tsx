@@ -1,6 +1,7 @@
 "use client"
 
 import {motion} from 'framer-motion'
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa6";
 
 export default function Links() {
   return (
@@ -11,8 +12,29 @@ export default function Links() {
       transition={{delay: 1, duration: 0.4}}
     >
       <a
+        href="https://www.facebook.com/xxxjustentacion"
+        target='_blank'
+        className="border-2 p-2 rounded-lg hover:border-primary text-sm lg:text-md hover:bg-primary hover:text-black"
+      >
+        <FaFacebookF size={15}/>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/justine-ivan-gueco-4a8a3a312/"
+        target='_blank'
+        className="border-2 p-2 rounded-lg hover:border-primary text-sm lg:text-md hover:bg-primary hover:text-black"
+      >
+        <FaLinkedinIn size={15}/>
+      </a>
+      <a
+        href="https://www.github.com/bangueco"
+        target='_blank'
+        className="border-2 p-2 rounded-lg hover:border-primary text-sm lg:text-md hover:bg-primary hover:text-black"
+      >
+        <FaGithub size={15}/>
+      </a>
+      <a
         href="https://www.facebook.com"
-        className="border-2 p-2 rounded-lg hover:border-primary text-sm lg:text-md"
+        className="border-2 p-2 rounded-lg hover:border-primary text-sm lg:text-md hover:bg-primary hover:text-black font-bold"
       >
         Download CV
       </a>
