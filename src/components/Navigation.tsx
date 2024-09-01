@@ -42,13 +42,13 @@ export default function Navigation() {
           }
           <ul className="hidden md:flex md:gap-4 justify-center text-xl">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="#hero">Home</Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <Link href="#about">About</Link>
             </li>
             <li>
-              <Link href="/projects">Projects</Link>
+              <Link href="#projects">Projects</Link>
             </li>
             <li>
               <ThemeSwitcher />
@@ -59,28 +59,30 @@ export default function Navigation() {
       <AnimatePresence>
         {
           isOpen && (
-            <motion.div
-              initial={{y: -200}}
-              animate={{y: 70}}
-              exit={{y: -200}}
-              transition={{duration: 0.5}}
-              className="md:hidden absolute w-full left-0 text-center bg-slate-100 dark:bg-stone-900 backdrop-blur-lg"
-            >
-              <ul className="text-xl flex flex-col gap-3">
-                <li className="p-2">
-                  <Link href="/">Home</Link>
-                </li>
-                <li className="p-2">
-                  <Link href="/about">About</Link>
-                </li>
-                <li className="p-2">
-                  <Link href="/projects">Projects</Link>
-                </li>
-                <li className="p-2">
-                  <ThemeSwitcher />
-                </li>
-              </ul>
-            </motion.div>
+            <div className="fixed w-full z-10">
+              <motion.div
+                initial={{y: -200}}
+                animate={{y: 70}}
+                exit={{y: -200}}
+                transition={{duration: 0.5}}
+                className="md:hidden absolute w-full left-0 text-center bg-slate-100 dark:bg-stone-900 backdrop-blur-lg z-10"
+              >
+                <ul className="text-xl flex flex-col gap-3">
+                  <li className="p-2">
+                    <Link href="#hero">Home</Link>
+                  </li>
+                  <li className="p-2">
+                    <Link href="#about">About</Link>
+                  </li>
+                  <li className="p-2">
+                    <Link href="#projects">Projects</Link>
+                  </li>
+                  <li className="p-2">
+                    <ThemeSwitcher />
+                  </li>
+                </ul>
+              </motion.div>
+            </div>
           )
         }
       </AnimatePresence>
