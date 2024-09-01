@@ -12,7 +12,7 @@ export default function TechnicalSkills() {
         initial={{x: -20, opacity: 0, filter: 'blur(5px)'}}
         whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
         transition={{duration: 0.7, delay: 0.5}}
-        viewport={{once: true, amount: 'all'}}
+        viewport={{once: true, amount: 'some'}}
       >
         Technical Skills
       </motion.h1>
@@ -24,7 +24,7 @@ export default function TechnicalSkills() {
               initial={{x: -30, opacity: 0, filter: 'blur(5px)'}}
               whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
               transition={{ duration: 0.3, delay: index * 0.1 }}
-              viewport={{once: true, amount: 'all'}}
+              viewport={{once: true, amount: 'some'}}
             >
               <Image
                 width={50}
