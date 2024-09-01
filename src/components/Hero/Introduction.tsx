@@ -1,9 +1,10 @@
 "use client"
 
 import {motion} from 'framer-motion'
+import Typewriter from 'react-ts-typewriter';
 
 export default function Introduction() {
-  const texts = ["Frontend Developer", "Backend Developer", "Mobile Developer"];
+  const texts = ["Back End Developer...", "Front End Developer...", "Mobile Developer...", "Student..."];
 
   return (
     <div className="text-center">
@@ -29,7 +30,7 @@ export default function Introduction() {
         animate={{opacity: 1, x: 0, filter: 'blur(0px)'}}
         transition={{duration: 0.5, delay: 0.2}}
       >
-        Full Stack Developer
+        <Typewriter text={texts} loop={true} speed={280}/>
       </motion.strong>
       <motion.p 
         className="text-xl sm:text-2xl md:text-3xl"
