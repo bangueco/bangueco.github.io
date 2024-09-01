@@ -38,9 +38,9 @@ export default function Navigation() {
             : 'bg-light dark:bg-dark'}
           `}>
           <div>
-            <Link href="/" className="text-2xl hover:text-primary">
+            <a href="/" className="text-2xl hover:text-primary">
               &lt;bangueco/&gt;
-            </Link>
+            </a>
           </div>
           <nav>
             {
@@ -50,13 +50,13 @@ export default function Navigation() {
             }
             <ul className="hidden md:flex md:gap-4 justify-center text-xl">
               <li>
-                <Link href="#hero">Home</Link>
+                <a href="#hero">Home</a>
               </li>
               <li>
-                <Link href="#about">About</Link>
+                <a href="#about">About</a>
               </li>
               <li>
-                <Link href="#projects">Projects</Link>
+                <a href="#projects">Projects</a>
               </li>
               <li>
                 <ThemeSwitcher />
@@ -77,13 +77,13 @@ export default function Navigation() {
                 >
                   <ul className="text-xl flex flex-col gap-3">
                     <li className="p-2">
-                      <Link href="#hero">Home</Link>
+                      <a href="#hero">Home</a>
                     </li>
                     <li className="p-2">
-                      <Link href="#about">About</Link>
+                      <a href="#about">About</a>
                     </li>
                     <li className="p-2">
-                      <Link href="#projects">Projects</Link>
+                      <a href="#projects">Projects</a>
                     </li>
                     <li className="p-2">
                       <ThemeSwitcher />
