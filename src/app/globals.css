@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-theme="light"] {
+  --background-color: rgb(255 251 252);
+  --lighter-background: rgba(255, 251, 252, 0.925);
+}
+
+[data-theme="dark"] {
+  --background-color: rgb(12 12 12);
+  --lighter-background: rgba(12, 12, 12, 0.932);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.not-scrolled {
+  background-color: var(--background-color);
+}
+
+.scrolled {
+  background-color: var(--lighter-background)
+}
