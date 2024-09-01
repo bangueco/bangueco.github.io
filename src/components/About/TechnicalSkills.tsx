@@ -6,13 +6,13 @@ import techStack from '@/lib/tech-stack'
 
 export default function TechnicalSkills() {
   return (
-    <article className='flex flex-col items-center pt-20 gap-5'>
+    <article className='flex flex-col items-center pt-40 gap-5'>
       <motion.h1 
         className="text-primary text-3xl md:text-4xl lg:text-5xl font-bold"
         initial={{x: -20, opacity: 0, filter: 'blur(5px)'}}
         whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
-        transition={{duration: 0.4, delay: 0.3}}
-        viewport={{once: true, amount: 0.4}}
+        transition={{duration: 0.7, delay: 0.5}}
+        viewport={{once: true, amount: 'some'}}
       >
         Technical Skills
       </motion.h1>
@@ -24,7 +24,7 @@ export default function TechnicalSkills() {
               initial={{x: -30, opacity: 0, filter: 'blur(5px)'}}
               whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
               transition={{ duration: 0.3, delay: index * 0.1 }}
-              viewport={{once: true}}
+              viewport={{once: true, amount: 'some'}}
             >
               <Image
                 width={50}

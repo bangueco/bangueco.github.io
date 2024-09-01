@@ -11,8 +11,8 @@ export default function AboutMe() {
         className="text-primary text-3xl md:text-4xl lg:text-5xl font-bold"
         initial={{x: -20, opacity: 0, filter: 'blur(5px)'}}
         whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
-        transition={{duration: 0.4}}
-        viewport={{once: true}}
+        transition={{duration: 0.6}}
+        viewport={{once: true, amount: 'all'}}
       >
         About Me
       </motion.h1>
@@ -20,8 +20,8 @@ export default function AboutMe() {
         <motion.div
           initial={{x: -20, opacity: 0, filter: 'blur(5px)'}}
           whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
-          transition={{duration: 0.4, delay: 0.3}}
-          viewport={{once: true}}
+          transition={{duration: 0.8, delay: 0.3}}
+          viewport={{once: true, amount: 'all'}}
         >
           <Image
             as={NextImage}
@@ -37,7 +37,7 @@ export default function AboutMe() {
           className='lg:w-[60%] flex flex-col gap-3'
           initial={{x: -20, opacity: 0, filter: 'blur(5px)'}}
           whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
-          transition={{duration: 0.4, delay: 0.5}}
+          transition={{duration: 0.7, delay: 0.5}}
           viewport={{once: true}}
         >
           <p className='text-justify text-md lg:text-lg'>
