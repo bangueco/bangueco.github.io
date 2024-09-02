@@ -9,7 +9,7 @@ export default function AboutMe() {
   return (
     <article className="gap-5 flex flex-col items-center">
       <motion.h1 
-        className="text-primary text-3xl md:text-4xl lg:text-5xl font-bold"
+        className="text-light-primary dark:text-dark-primary text-3xl md:text-4xl lg:text-5xl font-bold"
         initial="hidden"
         whileInView="visible"
         viewport={{once: true, amount: 'all'}}
@@ -42,10 +42,10 @@ export default function AboutMe() {
           viewport={{once: true}}
         >
           <p className='text-justify text-md lg:text-lg'>
-            I am 21 years old, taking <strong className='text-primary'>Bachelor of Science in Information Technology</strong>. 
+            I am 21 years old, taking <strong className='text-light-primary dark:text-dark-primary'>Bachelor of Science in Information Technology</strong>. 
             I specialize in web and mobile development. As a self taught programmer, i continue to hone my skills and knowledge, in-order to
             keep up with the current technology trends and best practices. My journey on tech started on my sophomore year, where i finally
-            have a personal laptop that i can use, where i also install <strong className='text-primary'>Linux</strong> as my main operation system.
+            have a personal laptop that i can use, where i also install <strong className='text-light-primary dark:text-dark-primary'>Linux</strong> as my main operation system.
           </p>
           <p className='text-justify text-md lg:text-lg'>
             I was driven by passion and excitement every time i learn new things. Looking ahead, I am eager to leverage 

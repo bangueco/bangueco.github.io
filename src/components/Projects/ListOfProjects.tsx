@@ -12,7 +12,7 @@ export default function ListOfProjects() {
     <>
       <AnimatedH1>My Projects</AnimatedH1>
       <AnimatedP>
-        A list of my personal and school projects, more info can be found at my <a className="text-primary" href="https://www.github.com/bangueco">Github</a>
+        A list of my personal and school projects, more info can be found at my <a className="text-light-primary dark:text-dark-primary" href="https://www.github.com/bangueco">Github</a>
       </AnimatedP>
       <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
         initial="hidden"

@@ -4,8 +4,6 @@ import {motion} from 'framer-motion'
 import Typewriter from 'react-ts-typewriter';
 
 export default function Introduction() {
-  const texts = ["Back End Developer...", "Front End Developer...", "Mobile Developer...", "Student..."];
-
   return (
     <div className="text-center">
       <motion.p 
@@ -22,15 +20,15 @@ export default function Introduction() {
         >
           👋🏻
         </motion.span> hello, i am
-        <strong className="text-primary"> Justine Ivan Gueco </strong>
+        <strong className="text-light-primary dark:text-dark-primary"> Justine Ivan Gueco </strong>
       </motion.p>
       <motion.strong 
-        className="text-primary text-4xl md:text-5xl lg:text-6xl"
+        className="text-light-primary dark:text-dark-primary text-4xl md:text-5xl lg:text-6xl"
         initial={{opacity: 0, x: -20, filter: 'blur(5px)'}}
         animate={{opacity: 1, x: 0, filter: 'blur(0px)'}}
         transition={{duration: 0.5, delay: 0.2}}
       >
-        <Typewriter text={texts} loop={true} speed={280}/>
+        <Typewriter text="Full Stack Developer" speed={120}/>
       </motion.strong>
       <motion.p 
         className="text-xl sm:text-2xl md:text-3xl"

@@ -38,7 +38,7 @@ export default function Navigation() {
             : 'bg-light dark:bg-dark'}
           `}>
           <div>
-            <a href="/" className="text-2xl hover:text-primary">
+            <a href="/" className="text-2xl hover:text-light-primary hover:dark:text-dark-primary">
               &lt;bangueco/&gt;
             </a>
           </div>

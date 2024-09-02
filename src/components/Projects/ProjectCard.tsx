@@ -35,7 +35,7 @@ export default function ProjectCard({url, title, description, technologies, repo
               {description}
           </p>
           <button
-            className="text-xs text-primary w-16 pt-2 self-start" 
+            className="text-xs text-light-primary dark:text-dark-primary w-16 pt-2 self-start" 
             onClick={() => setIsExpand(!isExpand)} 
           >
             {isExpand ? 'Read Less' : 'Read More'}
@@ -49,7 +49,7 @@ export default function ProjectCard({url, title, description, technologies, repo
           <a 
             href={repo_url} 
             target="_blank" 
-            className="flex flex-row gap-1 items-center justify-center hover:text-primary text-xs"
+            className="flex flex-row gap-1 items-center justify-center hover:text-light-primary hover:dark:text-dark-primary text-xs"
           >
             <FaGithub size={15} />
             View
@@ -58,7 +58,7 @@ export default function ProjectCard({url, title, description, technologies, repo
           <a 
             href={live_preview ? `${live_preview}` : ''} 
             target="_blank"
-            className="flex flex-row gap-1 items-center justify-center hover:text-primary text-xs"
+            className="flex flex-row gap-1 items-center justify-center hover:text-light-primary hover:dark:text-dark-primary text-xs"
           >
             <MdArrowOutward size={15} />
             {live_preview ? 'View' : 'Unavailable'}

@@ -7,7 +7,7 @@ import { ReactNode } from 'react'
 export default function AnimatedH1({children}: {children: ReactNode}) {
   return (
     <motion.h1
-      className="text-primary text-3xl md:text-4xl lg:text-5xl font-bold"
+      className="text-light-primary dark:text-dark-primary text-3xl md:text-4xl lg:text-5xl font-bold"
       initial="hidden"
       whileInView="visible"
       viewport={{once: true, amount: 'all'}}
