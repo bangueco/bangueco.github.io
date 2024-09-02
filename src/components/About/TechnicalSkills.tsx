@@ -3,7 +3,7 @@
 import {motion} from 'framer-motion'
 import Image from 'next/image'
 import techStack from '@/lib/tech-stack'
-import { itemFlipReveal, title } from '@/lib/animationVariants'
+import { itemFlipContainer, itemFlipReveal, title } from '@/lib/animationVariants'
 
 export default function TechnicalSkills() {
   return (
@@ -12,22 +12,23 @@ export default function TechnicalSkills() {
         className="text-primary text-3xl md:text-4xl lg:text-5xl font-bold"
         initial="hidden"
         whileInView="visible"
-        transition={{duration: 0.5}}
         viewport={{once: true, amount: 'all'}}
         variants={title}
       >
         Technical Skills
       </motion.h1>
-      <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-3'>
+      <motion.div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-3'
+        initial="hidden"
+        whileInView="reveal"
+        variants={itemFlipContainer}
+        viewport={{once: true, amount: 'some'}}
+      >
         {
           techStack.map((tech, index) => (
             <motion.div
               custom={index}
               className='flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 p-2 gap-2 border-1 rounded-md' key={index}
-              initial="hidden"
-              whileInView="reveal"
               variants={itemFlipReveal}
-              viewport={{once: true}}
             >
               <Image
                 width={0}
@@ -40,7 +41,7 @@ export default function TechnicalSkills() {
             </motion.div>
           ))
         }
-      </div>
+      </motion.div>
     </article>
   )
 }

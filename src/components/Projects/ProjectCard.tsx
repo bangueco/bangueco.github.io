@@ -9,17 +9,12 @@ import { MdArrowOutward } from "react-icons/md";
 import {motion} from 'framer-motion'
 import { itemFadeReveal } from "@/lib/animationVariants";
 
-export default function ProjectCard({index, url, title, description, technologies, repo_url, live_preview}: ProjectsProps) {
+export default function ProjectCard({url, title, description, technologies, repo_url, live_preview}: ProjectsProps) {
 
   const [isExpand, setIsExpand] = useState<boolean>(false)
 
   return (
     <motion.article
-      custom={index}
-      initial="hidden"
-      whileInView="reveal"
-      transition={{duration: 0.2}}
-      viewport={{once: true}}
       variants={itemFadeReveal}
     >
       <Card className="w-[21rem]">

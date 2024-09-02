@@ -1,5 +1,6 @@
 "use client"
 
+import { title } from "@/lib/animationVariants";
 import {Image} from "@nextui-org/react";
 import {motion} from 'framer-motion'
 import NextImage from "next/image";
@@ -9,10 +10,10 @@ export default function AboutMe() {
     <article className="gap-5 flex flex-col items-center">
       <motion.h1 
         className="text-primary text-3xl md:text-4xl lg:text-5xl font-bold"
-        initial={{x: -20, opacity: 0, filter: 'blur(5px)'}}
-        whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
-        transition={{duration: 0.6}}
+        initial="hidden"
+        whileInView="visible"
         viewport={{once: true, amount: 'all'}}
+        variants={title}
       >
         About Me
       </motion.h1>

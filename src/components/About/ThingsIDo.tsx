@@ -3,7 +3,7 @@
 import {motion} from 'framer-motion'
 import thingsIDo from '@/lib/things-i-do'
 import { Card, CardHeader, CardBody, Divider } from "@nextui-org/react"
-import { itemFadeReveal, title } from '@/lib/animationVariants'
+import { itemContainer, itemFadeReveal, title } from '@/lib/animationVariants'
 
 export default function ThingsIDo() {
   return (
@@ -18,14 +18,16 @@ export default function ThingsIDo() {
       >
         Things I Do
       </motion.h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 justify-center items-center gap-2 w-[100%] lg:w-[70%]">
+      <motion.div 
+        className="grid grid-cols-2 md:grid-cols-3 justify-center items-center gap-2 w-[100%] lg:w-[70%]"
+        initial="hidden"
+        whileInView="reveal"
+        variants={itemContainer}
+      >
         {
           thingsIDo.map((item, index)=> (
             <motion.div
               key={index}
-              custom={index}
-              initial="hidden"
-              whileInView="reveal"
               variants={itemFadeReveal}
               viewport={{once: true}}
             >
@@ -41,7 +43,7 @@ export default function ThingsIDo() {
             </motion.div>
           ))
         }
-      </div>
+      </motion.div>
     </article>
   )
 }
