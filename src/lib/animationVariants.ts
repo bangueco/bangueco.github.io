@@ -2,7 +2,12 @@ import { Variants } from "framer-motion";
 
 export const title: Variants = {
   hidden: {x: -20, opacity: 0, filter: 'blur(5px)'},
-  visible: {x: 0, opacity: 1, filter: 'blur(0px)'},
+  visible: {
+    x: 0, 
+    opacity: 1, 
+    filter: 'blur(0px)',
+    transition: { duration: 1 }
+  },
 }
 
 export const itemFadeReveal: Variants = {
