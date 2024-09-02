@@ -1,5 +1,4 @@
 export interface ProjectsProps {
-  index?: number,
   url: string
   title: string
   description: string
