@@ -18,6 +18,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "dark-primary": "#59FFA0",
+        "light-primary": "#034A03",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
