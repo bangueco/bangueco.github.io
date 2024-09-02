@@ -4,6 +4,7 @@ import ThingsIDo from "@/components/About/ThingsIDo";
 import GridBackground from "@/components/GridBackground";
 import Introduction from "@/components/Hero/Introduction";
 import Links from "@/components/Hero/Links";
+import ListOfProjects from "@/components/Projects/ListOfProjects";
 
 export default function Home() {
   return (
@@ -19,7 +20,8 @@ export default function Home() {
         <ThingsIDo />
         <TechnicalSkills />
       </section>
-      <section id="projects" className="pt-24 p-3">
+      <section id="projects" className="pt-56 pb-40 gap-5 p-3 flex flex-col justify-center items-center">
+        <ListOfProjects />
       </section>
     </main>
   );
