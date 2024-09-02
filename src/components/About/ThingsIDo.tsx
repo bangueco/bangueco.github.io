@@ -23,8 +23,8 @@ export default function ThingsIDo() {
               key={index}
               initial={{x: -20, opacity: 0, filter: 'blur(5px)'}}
               whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{once: true, amount: 'all'}}
+              transition={{ duration: 0.3, delay: index * 0.2 }}
+              viewport={{once: true, amount: 'some'}}
             >
               <Card className='h-40'>
                 <CardHeader className='text-3xl font-bold'>
