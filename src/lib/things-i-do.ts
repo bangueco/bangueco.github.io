@@ -1,28 +1,37 @@
 const thingsIDo: Array<{title: string, description: string}> = [
   {
     title: "Front-end",
-    description: "I develop user interface with frontend technologies, while prioritizing simplicity, ease-of-use and user friendliness."
+    description: "I build user interfaces with a focus on simplicity and usability."
   },
   {
     title: "Back-end",
-    description: "I develop and maintain server-side applications, ensuring efficient data handling and robust functionality."
+    description: "I handle server-side development for efficient data management and functionality."
   },
   {
     title: "Mobile",
-    description: "I develop native mobile applications for Android and iOS with React Native."
+    description: "I create native mobile apps for Android and iOS using React Native."
   },
   {
     title: "Testing",
-    description: "I do unit and api testing ensuring those functionalities are reliable to be delivered to production environment."
-  },
-  {
-    title: "Debugging",
-    description: "I identify and resolve bugs by analyzing error reports, debugging code, and applying effective solutions."
+    description: "I conduct unit and API tests to ensure reliable functionality before release."
   },
   {
     title: "Deployment",
-    description: "I deploy applications using Docker, Vercel and Apache Web Server/Nginx."
+    description: "I deploy applications with Docker, Vercel, and Apache/Nginx."
+  },
+  {
+    title: "API Development",
+    description: "I design and implement APIs to enable smooth integration between different systems."
+  },
+  {
+    title: "Database Management",
+    description: "I manage databases to ensure data integrity and performance."
+  },
+  {
+    title: "Version Control",
+    description: "I use version control systems like Git to manage code changes and collaborate with teams."
   }
 ];
+
 
 export default thingsIDo
