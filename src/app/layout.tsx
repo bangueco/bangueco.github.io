@@ -27,7 +27,7 @@ export default function RootLayout({
             {children}
             <footer className="p-5 text-center bg-stone-100 dark:bg-neutral-900">
               <p>
-                © All Rights Reserved By <span className="text-primary"><a href="#">Justine Ivan Gueco</a></span>
+                © All Rights Reserved By <span className="text-light-primary dark:text-dark-primary"><a href="#">Justine Ivan Gueco</a></span>
               </p>
             </footer>
         </Providers>
