@@ -3,36 +3,40 @@
 import {motion} from 'framer-motion'
 import Image from 'next/image'
 import techStack from '@/lib/tech-stack'
+import { itemFlipReveal, title } from '@/lib/animationVariants'
 
 export default function TechnicalSkills() {
   return (
-    <article className='flex flex-col items-center pt-40 gap-5'>
+    <article className='flex flex-col items-center pt-56 gap-5'>
       <motion.h1 
         className="text-primary text-3xl md:text-4xl lg:text-5xl font-bold"
-        initial={{x: -20, opacity: 0, filter: 'blur(5px)'}}
-        whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
-        transition={{duration: 0.7, delay: 0.5}}
-        viewport={{once: true, amount: 'some'}}
+        initial="hidden"
+        whileInView="visible"
+        transition={{duration: 0.5}}
+        viewport={{once: true, amount: 'all'}}
+        variants={title}
       >
         Technical Skills
       </motion.h1>
-      <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-3'>
+      <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-3'>
         {
           techStack.map((tech, index) => (
-            <motion.div 
-              className='flex flex-col justify-center items-center w-28 p-3 border-1 rounded-lg' key={index}
-              initial={{x: -30, opacity: 0, filter: 'blur(5px)'}}
-              whileInView={{x: 0, opacity: 1, filter: 'blur(0px)'}}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
-              viewport={{once: true, amount: 'some'}}
+            <motion.div
+              custom={index}
+              className='flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 p-2 gap-2 border-1 rounded-md' key={index}
+              initial="hidden"
+              whileInView="reveal"
+              variants={itemFlipReveal}
+              viewport={{once: true}}
             >
               <Image
-                width={50}
-                height={50}
+                width={0}
+                height={0}
+                className='h-10 w-10 md:h-14 md:w-14'
                 src={tech.src}
                 alt={tech.alt}
               />
-              <p>{tech.alt}</p>
+              <p className='text-xs md:text-md'>{tech.alt}</p>
             </motion.div>
           ))
         }
