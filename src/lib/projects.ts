@@ -38,4 +38,12 @@ export const projects: Array<ProjectsProps> = [
     technologies: [{tech: "HTML"}, {tech: "CSS"}, {tech: "PHP"}, {tech: "Laravel"}, {tech: "Bootstrap"}, {tech: "MongoDB"}],
     repo_url: "https://www.github.com/bangueco/event-registration-system"
   },
+  {
+    url: "/images/projects/weather-app.png",
+    title: "Weather App",
+    description: "A simple personal project that fetches the current weather of a city using some third party weather api. This project is also my first project using webpack, and also helps me understand how async javascript works under the hood.",
+    technologies: [{tech: "HTML"}, {tech: "CSS"}, {tech: "Javascript"}, {tech: "Webpack"}, {tech: "npm"}],
+    repo_url: "https://www.github.com/bangueco/weather-app",
+    live_preview: "https://bangueco.github.io/weather-app"
+  }
 ]
