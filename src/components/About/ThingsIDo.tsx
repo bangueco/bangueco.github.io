@@ -23,13 +23,13 @@ export default function ThingsIDo() {
         initial="hidden"
         whileInView="reveal"
         variants={itemContainer}
+        viewport={{once: true}}
       >
         {
           thingsIDo.map((item, index)=> (
             <motion.div
               key={index}
               variants={itemFadeReveal}
-              viewport={{once: true}}
             >
               <Card className='h-44 md:h-52 lg:h-44'>
                 <CardHeader className='text-xl md:text-2xl font-bold'>

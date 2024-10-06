@@ -1,24 +1,16 @@
 "use client"
 
-import AnimatedH1 from "../AnimatedH1";
 import { projects } from "@/lib/projects";
 import ProjectCard from "./ProjectCard";
-import AnimatedP from "../AnimatedP";
-import {motion} from 'framer-motion'
-import { itemContainer } from "@/lib/animationVariants";
 
 export default function ListOfProjects() {
   return (
     <>
-      <AnimatedH1>My Projects</AnimatedH1>
-      <AnimatedP>
+      <h1 className="text-light-primary dark:text-dark-primary text-3xl md:text-4xl lg:text-5xl font-bold">My projects</h1>
+      <p>
         A list of my personal and school projects, more info can be found at my <a className="text-light-primary dark:text-dark-primary" href="https://www.github.com/bangueco">Github</a>
-      </AnimatedP>
-      <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
-        initial="hidden"
-        whileInView="reveal"
-        variants={itemContainer}
-        viewport={{amount: 'some'}}
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
       >
         {
           projects.map((project, index) => (
@@ -33,7 +25,7 @@ export default function ListOfProjects() {
             />
           ))
         }
-      </motion.div>
+      </div>
     </>
   )
 }
