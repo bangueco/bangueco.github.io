@@ -32,7 +32,7 @@ export default function Navigation() {
   if (isMounted) {
     return (
       <>
-        <header className={`flex justify-between p-5 items-center fixed w-full top-0 z-20 
+        <header className={`flex justify-between p-5 items-center fixed w-full top-0 z-30 
             ${(scrolled > 80 || window.scrollY > 80) 
             ? 'bg-lighter-light dark:bg-lighter-dark backdrop-blur-md shadow-lg' 
             : 'bg-light dark:bg-dark'}
@@ -67,7 +67,7 @@ export default function Navigation() {
         <AnimatePresence>
           {
             isOpen && (
-              <div className="fixed w-full z-10">
+              <div className="fixed w-full z-20">
                 <motion.div
                   initial={{y: -200}}
                   animate={{y: 70}}
