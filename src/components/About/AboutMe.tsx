@@ -6,6 +6,20 @@ import {motion} from 'framer-motion'
 import NextImage from "next/image";
 
 export default function AboutMe() {
+
+  const calculateAge = (birthDate: string): number => {
+    const today = new Date();
+    const birth = new Date(birthDate);
+    let age = today.getFullYear() - birth.getFullYear();
+    const monthDifference = today.getMonth() - birth.getMonth();
+    if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birth.getDate())) {
+      age--;
+    }
+    return age;
+  };
+
+  const age = calculateAge('2002-09-26');
+
   return (
     <article className="gap-5 flex flex-col items-center">
       <motion.h1 
@@ -42,7 +56,7 @@ export default function AboutMe() {
           viewport={{once: true}}
         >
           <p className='text-justify text-md lg:text-lg'>
-            I am 21 years old, taking <strong className='text-light-primary dark:text-dark-primary'>Bachelor of Science in Information Technology</strong>. 
+            I am {age} years old, taking <strong className='text-light-primary dark:text-dark-primary'>Bachelor of Science in Information Technology</strong>. 
             I specialize in web and mobile development. As a self taught programmer, i continue to hone my skills and knowledge, in-order to
             keep up with the current technology trends and best practices. My journey on tech started on my sophomore year, where i finally
             have a personal laptop that i can use, where i also install <strong className='text-light-primary dark:text-dark-primary'>Linux</strong> as my main operation system.
