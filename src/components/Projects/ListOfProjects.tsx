@@ -10,7 +10,7 @@ export default function ListOfProjects() {
       <p>
         A list of my personal and school projects, more info can be found at my <a className="text-light-primary dark:text-dark-primary" href="https://www.github.com/bangueco">Github</a>
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-auto"
       >
         {
           projects.map((project, index) => (

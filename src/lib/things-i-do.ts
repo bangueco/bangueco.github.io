@@ -1,37 +1,28 @@
-const thingsIDo: Array<{title: string, description: string}> = [
+const thingsIDo: Array<{ title: string; description: string }> = [
   {
-    title: "Front-end",
-    description: "I build user interfaces with a focus on simplicity and usability."
+    title: "Front-end Development",
+    description: "Building responsive and user-friendly interfaces with modern tools like React, focused on usability and performance."
   },
   {
-    title: "Back-end",
-    description: "I handle server-side development for efficient data management and functionality."
+    title: "Back-end Development",
+    description: "Developing scalable server-side logic using technologies like Node.js and Laravel, with a focus on efficiency and security."
   },
   {
-    title: "Mobile",
-    description: "I create native mobile apps for Android and iOS using React Native."
-  },
-  {
-    title: "Testing",
-    description: "I conduct unit and API tests to ensure reliable functionality before release."
-  },
-  {
-    title: "Deployment",
-    description: "I deploy applications with Docker, Vercel, and Apache/Nginx."
+    title: "Mobile Development",
+    description: "Creating cross-platform mobile apps for Android and iOS with React Native, ensuring compatibility and smooth performance."
   },
   {
     title: "API Development",
-    description: "I design and implement APIs to enable smooth integration between different systems."
+    description: "Designing RESTful and GraphQL APIs to enable secure and scalable communication between systems."
   },
   {
     title: "Database Management",
-    description: "I manage databases to ensure data integrity and performance."
+    description: "Managing SQL databases like PostgreSQL and SQLite, ensuring data integrity and performance."
   },
   {
     title: "Version Control",
-    description: "I use version control systems like Git to manage code changes and collaborate with teams."
+    description: "Using Git and platforms like GitHub for version control, managing workflows and team collaboration."
   }
 ];
 
-
-export default thingsIDo
+export default thingsIDo;

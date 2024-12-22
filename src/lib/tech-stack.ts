@@ -44,10 +44,6 @@ const techStack: Array<{src: string, alt: string}> = [
     alt: "SQLite",
   },
   {
-    src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/MongoDB.svg",
-    alt: "MongoDB",
-  },
-  {
     src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Prisma.svg",
     alt: "Prisma",
   },
@@ -64,10 +60,6 @@ const techStack: Array<{src: string, alt: string}> = [
     alt: "Docker",
   },
   {
-    src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Nginx.svg",
-    alt: "Nginx",
-  },
-  {
     src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/VSCode-Dark.svg",
     alt: "VSCode",
   },
@@ -82,6 +74,10 @@ const techStack: Array<{src: string, alt: string}> = [
   {
     src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Git.svg",
     alt: "Git",
+  },
+  {
+    src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Laravel-Dark.svg",
+    alt: "Laravel",
   },
 ]
 

@@ -3,7 +3,7 @@
 import { ProjectsProps } from "@/lib/projects";
 import { Card, CardBody, CardFooter, CardHeader, Divider } from "@nextui-org/react";
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import {motion} from 'framer-motion'
@@ -11,13 +11,13 @@ import { itemFadeReveal } from "@/lib/animationVariants";
 
 export default function ProjectCard({url, title, description, technologies, repo_url, live_preview}: ProjectsProps) {
 
-  const [isExpand, setIsExpand] = useState<boolean>(false)
+  // const [isExpand, setIsExpand] = useState<boolean>(false)
 
   return (
     <motion.article
       variants={itemFadeReveal}
     >
-      <Card className="w-[21rem]">
+      <Card className="w-[21rem] h-full">
         <CardHeader className="flex-col gap-3 justify-center items-center">
           <Image
             src={url}
@@ -30,15 +30,15 @@ export default function ProjectCard({url, title, description, technologies, repo
         </CardHeader>
         <CardBody className="flex justify-center items-center pb-5 pt-2">
           <p 
-            className={`text-justify text-sm w-full ${!isExpand ? 'line-clamp-2' : ''}`}
+            className={`text-sm w-full`}
           >
               {description}
           </p>
           <button
             className="text-xs text-light-primary dark:text-dark-primary w-16 pt-2 self-start" 
-            onClick={() => setIsExpand(!isExpand)} 
+            // onClick={() => setIsExpand(!isExpand)}
           >
-            {isExpand ? 'Read Less' : 'Read More'}
+            {/* {isExpand ? 'Read Less' : 'Read More'} */}
           </button>
           <div className="pt-3 flex flex-wrap gap-2">
             {technologies.map((tech, index) => <p key={index} className="border-1 rounded-xl p-2 text-xs">{tech.tech}</p>)}

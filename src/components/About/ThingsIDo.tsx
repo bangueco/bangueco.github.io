@@ -7,7 +7,7 @@ import { itemContainer, itemFadeReveal, title } from '@/lib/animationVariants'
 
 export default function ThingsIDo() {
   return (
-    <article className="pt-56 flex justify-center items-center flex-col gap-5">
+    <article className="pt-96 flex justify-center items-center flex-col gap-5">
       <motion.h1
         className="text-light-primary dark:text-dark-primary text-3xl md:text-4xl lg:text-5xl font-bold"
         initial="hidden"
@@ -32,8 +32,8 @@ export default function ThingsIDo() {
               variants={itemFadeReveal}
             >
               <Card className='h-44 md:h-52 lg:h-44'>
-                <CardHeader className='text-xl md:text-2xl font-bold'>
-                  {item.title}
+                <CardHeader className='text-xl md:text-xl font-bold text-light-primary dark:text-dark-primary'>
+                  {index + 1}. {item.title}
                 </CardHeader>
                 <Divider/>
                 <CardBody className='text-sm md:text-md'>

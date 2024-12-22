@@ -15,12 +15,12 @@ export default function Home() {
           <Links />
         </GridBackground>
       </section>
-      <section id="about" className="pt-24 p-3">
+      <section id="about" className="pt-24 pb-56 p-3">
         <AboutMe />
         <ThingsIDo />
         <TechnicalSkills />
       </section>
-      <section id="projects" className="pt-56 pb-40 gap-5 p-3 flex flex-col justify-center items-center">
+      <section id="projects" className="pt-24 pb-40 gap-5 p-3 flex flex-col justify-center items-center">
         <ListOfProjects />
       </section>
     </main>
