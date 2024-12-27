@@ -5,7 +5,7 @@ const thingsIDo: Array<{ title: string; description: string }> = [
   },
   {
     title: "Back-end Development",
-    description: "Developing scalable server-side logic using technologies like Node.js and Laravel, with a focus on efficiency and security."
+    description: "Developing scalable server-side logic using technologies like Node.js, Express JS and Laravel, with a focus on efficiency and security."
   },
   {
     title: "Mobile Development",
@@ -13,7 +13,7 @@ const thingsIDo: Array<{ title: string; description: string }> = [
   },
   {
     title: "API Development",
-    description: "Designing RESTful and GraphQL APIs to enable secure and scalable communication between systems."
+    description: "Designing RESTful API's to enable secure and scalable communication between systems."
   },
   {
     title: "Database Management",

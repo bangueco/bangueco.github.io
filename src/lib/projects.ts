@@ -11,7 +11,7 @@ export const projects: Array<ProjectsProps> = [
   {
     url: "/images/projects/portfolio.png",
     title: "My Personal Portfolio Site",
-    description: "A personal portfolio showcasing information about me, my skills, and my programming experience.",
+    description: "My personal portfolio website that showcases the projects I've worked on, my skills, and my experiences. It is built with NextJS, Tailwind CSS, and Framer Motion. It is hosted on Vercel.",
     technologies: [{tech: "Typescript"}, {tech: "NextJS"}, {tech: "Tailwind CSS"}, {tech: "Vercel"}, {tech: "Framer Motion"}],
     repo_url: "https://www.github.com/bangueco/bangueco.github.io",
     live_preview: "https://bangueco.vercel.app"
@@ -19,10 +19,10 @@ export const projects: Array<ProjectsProps> = [
   {
     url: "/images/projects/plus-ultra.jpg",
     title: "Plus Ultra",
-    description: "My capstone project, for our beneficiary Muscle Mechanic Fitness Gym. A fitness mobile app that tracks and logs user workouts and identify workout equipments.",
+    description: "A capstone project for our beneficiary Muscle Mechanic Fitness Gym. A mobile application that identifies workout equipments, helps users to track their progress, and get a personalized workout plan from trainers. ",
     technologies: [{tech: "Typescript"}, {tech: "React Native"}, {tech: "Express JS"}, {tech: "Node JS"}, {tech: "PostgreSQL"}, {tech: "SQLite"}, {tech: "Prisma"}],
     repo_url: "https://www.github.com/bangueco/plus-ultra",
-    live_preview: "https://play.google.com/store/apps?hl=en_US&pli=1"
+    live_preview: "https://github.com/bangueco/plus-ultra/releases/tag/v1.2.11"
   },
   {
     url: "/images/projects/inventory-management-system.png",
