@@ -1,6 +1,6 @@
 "use client"
 
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import techStack from '@/lib/tech-stack'
 import { itemFlipContainer, itemFlipReveal, title } from '@/lib/animationVariants'
@@ -8,32 +8,32 @@ import { itemFlipContainer, itemFlipReveal, title } from '@/lib/animationVariant
 export default function TechnicalSkills() {
   return (
     <article className='flex flex-col items-center pt-56 gap-5'>
-      <motion.h1 
+      <motion.h1
         className="text-light-primary dark:text-dark-primary text-3xl md:text-4xl lg:text-5xl font-bold"
         initial="hidden"
         whileInView="visible"
-        viewport={{once: true, amount: 'all'}}
+        viewport={{ once: true, amount: 'all' }}
         variants={title}
       >
         Technical Skills
       </motion.h1>
-      <motion.div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-3'
+      <motion.div className='grid grid-cols-5 md:grid-cols-7 lg:grid-cols-9 gap-3'
         initial="hidden"
         whileInView="reveal"
         variants={itemFlipContainer}
-        viewport={{once: true, amount: 'some'}}
+        viewport={{ once: true, amount: 'some' }}
       >
         {
           techStack.map((tech, index) => (
             <motion.div
               custom={index}
-              className='flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 p-2 gap-2 border-1 rounded-md' key={index}
+              className='flex flex-col justify-center items-center w-24 h-24 p-2 gap-2 border-1 rounded-md' key={index}
               variants={itemFlipReveal}
             >
               <Image
                 width={0}
                 height={0}
-                className='h-10 w-10 md:h-14 md:w-14'
+                className='h-10 w-10 md:h-12 md:w-12'
                 src={tech.src}
                 alt={tech.alt}
               />

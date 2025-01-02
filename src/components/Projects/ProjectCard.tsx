@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectsProps> = ({
 }) => {
   return (
     <article>
-      <Card className="w-[22rem] shadow-md transition-shadow hover:shadow-lg">
+      <Card className="w-[20rem] shadow-md transition-shadow hover:shadow-lg">
         <CardHeader className="flex-col gap-3 justify-center items-center">
           <Image
             src={url}
@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectsProps> = ({
             height={500}
             className="rounded-md object-contain h-[150px] w-full"
           />
-          <h1 className="text-lg font-bold text-primary">{title.toUpperCase()}</h1>
+          <h1 className="text-md font-bold text-light-primary dark:text-primary">{title.toUpperCase()}</h1>
         </CardHeader>
         <CardBody className="relative flex flex-col gap-5 justify-center items-center pb-5 pt-2 overflow-hidden">
           <div className="text-[0.7rem] w-full text-justify h-[75px] overflow-y-auto scrollbar-default scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-600 relative">
@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectsProps> = ({
             {technologies.map((tech, index) => (
               <span
                 key={index}
-                className="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 py-1 px-3 rounded-full text-xs"
+                className="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 py-1 px-3 rounded-full text-[0.6rem] font-semibold"
               >
                 {tech.tech}
               </span>
