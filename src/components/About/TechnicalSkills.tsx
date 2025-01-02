@@ -17,7 +17,7 @@ export default function TechnicalSkills() {
       >
         Technical Skills
       </motion.h1>
-      <motion.div className='grid grid-cols-5 md:grid-cols-7 lg:grid-cols-9 gap-3'
+      <motion.div className='grid grid-cols-3 md:grid-cols-7 lg:grid-cols-9 gap-3'
         initial="hidden"
         whileInView="reveal"
         variants={itemFlipContainer}
