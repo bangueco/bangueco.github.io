@@ -19,7 +19,7 @@ export default function ThingsIDo() {
         Things I Do
       </motion.h1>
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-2 w-[100%] lg:w-[90%]"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-2 w-[100%] lg:w-[70%]"
         initial="hidden"
         whileInView="reveal"
         variants={itemContainer}
@@ -37,7 +37,7 @@ export default function ThingsIDo() {
                   {index + 1}. {item.title}
                 </CardHeader>
                 <Divider />
-                <CardBody className='text-sm md:text-md'>
+                <CardBody className='text-xs'>
                   {item.description}
                 </CardBody>
               </Card>
