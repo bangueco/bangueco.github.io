@@ -4,7 +4,7 @@ import Link from "next/link";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import { useEffect, useState } from "react";
-import {AnimatePresence, motion} from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -19,7 +19,7 @@ export default function Navigation() {
     const handleScroll = () => {
       setScrolled(window.scrollY);
     };
-  
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -33,8 +33,8 @@ export default function Navigation() {
     return (
       <>
         <header className={`flex justify-between p-5 items-center fixed w-full top-0 z-30 
-            ${(scrolled > 80 || window.scrollY > 80) 
-            ? 'bg-lighter-light dark:bg-lighter-dark backdrop-blur-md shadow-lg' 
+            ${(scrolled > 80 || window.scrollY > 80)
+            ? 'bg-lighter-light dark:bg-lighter-dark backdrop-blur-md shadow-lg'
             : 'bg-light dark:bg-dark'}
           `}>
           <div>
@@ -45,8 +45,8 @@ export default function Navigation() {
           <nav>
             {
               isOpen
-              ? <RxCross1 onClick={toggleMenu} className="md:hidden hover:cursor-pointer" size={30} />
-              : <RxHamburgerMenu onClick={toggleMenu} className="md:hidden hover:cursor-pointer" size={30}  />
+                ? <RxCross1 onClick={toggleMenu} className="md:hidden hover:cursor-pointer" size={30} />
+                : <RxHamburgerMenu onClick={toggleMenu} className="md:hidden hover:cursor-pointer" size={30} />
             }
             <ul className="hidden md:flex md:gap-4 justify-center text-xl">
               <li>
@@ -59,6 +59,9 @@ export default function Navigation() {
                 <a href="#projects">Projects</a>
               </li>
               <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
                 <ThemeSwitcher />
               </li>
             </ul>
@@ -69,10 +72,10 @@ export default function Navigation() {
             isOpen && (
               <div className="fixed w-full z-20">
                 <motion.div
-                  initial={{y: -200}}
-                  animate={{y: 70}}
-                  exit={{y: -200}}
-                  transition={{duration: 0.5}}
+                  initial={{ y: -200 }}
+                  animate={{ y: 70 }}
+                  exit={{ y: -200 }}
+                  transition={{ duration: 0.5 }}
                   className="md:hidden absolute w-full left-0 text-center bg-slate-100 dark:bg-stone-900 backdrop-blur-lg z-10"
                 >
                   <ul className="text-xl flex flex-col gap-3">

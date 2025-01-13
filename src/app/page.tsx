@@ -1,6 +1,7 @@
 import AboutMe from "@/components/About/AboutMe";
 import TechnicalSkills from "@/components/About/TechnicalSkills";
 import ThingsIDo from "@/components/About/ThingsIDo";
+import Contact from "@/components/Contact/Contact";
 import GridBackground from "@/components/GridBackground";
 import Introduction from "@/components/Hero/Introduction";
 import Links from "@/components/Hero/Links";
@@ -20,8 +21,11 @@ export default function Home() {
         <ThingsIDo />
         <TechnicalSkills />
       </section>
-      <section id="projects" className="pt-24 pb-40 gap-5 p-3 flex flex-col justify-center items-center">
+      <section id="projects" className="pt-24 pb-40 p-3 flex flex-col justify-center items-center">
         <ListOfProjects />
+      </section>
+      <section id="contact" className="pt-24 pb-40 gap-5">
+        <Contact />
       </section>
     </main>
   );
