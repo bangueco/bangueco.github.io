@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
-import Providers from "./providers";
-import {Manrope} from "next/font/google"
+import { Analytics } from "@vercel/analytics/react"
 
-const manrope = Manrope({
-  subsets: ['latin'],
-  display: 'swap',
-})
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "Justine Ivan Gueco | Full Stack Developer Portfolio",
-  description: "Hello! I am Justine Ivan Gueco, a motivated full-stack developer. I specialize in web and mobile development, a skill set I’ve honed through a combination of hands-on project experience and continuous learning.",
+  title: "Justine Ivan Gueco | Portfolio",
+  description: "A passionate and self-taught software developer from the Philippines. Specializing in building mobile and web applications from scratch.",
 };
 
 export default function RootLayout({
@@ -20,17 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
-      <body className={`${manrope.className} h-full bg-light dark:bg-dark relative`}>
-        <Providers>
-            <Navigation />
-            {children}
-            <footer className="p-5 text-center bg-stone-100 dark:bg-neutral-900">
-              <p>
-                © All Rights Reserved By <span className="text-light-primary dark:text-dark-primary"><a href="#">Justine Ivan Gueco</a></span>
-              </p>
-            </footer>
-        </Providers>
+    <html lang="en">
+      <body
+        className={`${openSans.variable} antialiased lg:h-screen scroll-smooth`}
+      >
+        {children}
+        <Analytics />
       </body>
     </html>
   );
